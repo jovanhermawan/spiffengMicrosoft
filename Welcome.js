@@ -93,7 +93,7 @@ const SlideImages = ({ scrollX }) => {
   );
 };
 
-const Vpn = () => {
+const Welcome = () => {
   const scrollX = new Animated.Value(0);
   const [slideIndex, setSlideIndex] = useState(0);
 
