@@ -38,8 +38,8 @@ const GOOGLE_IOS_ID = "";
 const GOOGLE_ANDROID_ID = "";
 const API_URL = "http://5e08ac18434a370014168b98.mockapi.io/api/v1";
 const BACKGROUND_IMG =
-  "https://github.com/react-ui-kit/freebies/blob/master/login/assets/background.jpeg?raw=true";
-
+  "https://i.ibb.co/n7swJ00/Pngtree-fresh-vegetables-find-us-vegetables-1068250.jpg";
+// <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com</a>
 export default () => {
   const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("contact@react-ui-kit.com");
