@@ -7,7 +7,6 @@ import {
 } from "react-native";
 import { Block, Text, theme } from "galio-framework";
 
-import Images from "./Images";
 import { DrawerItem as DrawerCustomItem } from './DrawerItem';
 
 function CustomDrawerContent({ drawerPosition, navigation, profile, focused, state, ...rest }) {
