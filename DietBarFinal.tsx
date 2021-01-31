@@ -1,5 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View, TouchableHighlight, Dimensions } from 'react-native';
+import PieChart from 'react-minimal-pie-chart';
+ 
 
 export default function DietBarFinal() {
   return (
@@ -10,28 +12,13 @@ export default function DietBarFinal() {
         </Text>
       </View> 
 	    <View style={{top: 150, alignItems:'center', justifyContent: 'center'}}>
-          <ScrollView style={{flex: 1}}>
-            <View style={styles.container}>
-              <StatusBar
-                hidden={true}
-              />
-              <Text style={styles.title}>Basic</Text>
-              <PieChart
-                chart_wh={chart_wh}
-                series={series}
-                sliceColor={sliceColor}
-              />
-              <Text style={styles.title}>Doughnut</Text>
-              <PieChart
-                chart_wh={chart_wh}
-                series={series}
-                sliceColor={sliceColor}
-                doughnut={true}
-                coverRadius={0.45}
-                coverFill={'#FFF'}
-              />
-            </View>
-          </ScrollView>
+        <PieChart
+              data={[
+                { title: 'One', value: 10, color: '#E38627' },
+                { title: 'Two', value: 15, color: '#C13C37' },
+                { title: 'Three', value: 20, color: '#6A2135' },
+              ]}
+          />
       </View>
       <View style={{top:175, left:40}}>
         <Text style={{fontSize:18, fontWeight:'bold', color:'#1C1939'}}>
@@ -40,8 +27,6 @@ export default function DietBarFinal() {
       </View>
       <View style={{top:200, left:40, flex:1, flexDirection:'row', justifyContent:'flex-start'}}>
       <View>
-          <Image style={{width:41, height:46, borderRadius:16}} source={require('./water.png')}></Image>
-          </View>
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
             Protein
@@ -58,9 +43,6 @@ export default function DietBarFinal() {
         />
       </View>
       <View style={{top:125, left:40, flex:1, flexDirection:'row', justifyContent:'flex-start'}}>
-        <View>
-          <Image style={{width:41, height:46, borderRadius:16}} source={require('./harvest.png')}></Image>
-          </View>
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
             Iron

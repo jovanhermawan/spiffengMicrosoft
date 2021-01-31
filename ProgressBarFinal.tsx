@@ -1,5 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View, TouchableHighlight, Dimensions } from 'react-native';
+import ProgressCircle from 'react-native-progress-circle';
+
 
 export default function ProgressBarFinal() {
   return (

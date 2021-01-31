@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View, TouchableHighlight, Dimensions } from 'react-native';
+import BarChart from "react-native-chart-kit";
 
 export default function ExpensesBarFinal() {
   return (
@@ -26,9 +27,6 @@ export default function ExpensesBarFinal() {
         </Text>
       </View>
       <View style={{top:200, left:40, flex:1, flexDirection:'row', justifyContent:'flex-start'}}>
-        <View>
-          <Image style={{width:41, height:46, borderRadius:16}} source={require('./water.png')}></Image>
-        </View>
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
             Item 1
