@@ -1,14 +1,26 @@
-import React from 'react';
-import { Image, StyleSheet, Text, View, TouchableHighlight, Dimensions } from 'react-native';
-
-export default function App() {
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Button, Image, StyleSheet, Text, View, TouchableHighlight, Dimensions } from 'react-native';
+import Page from'./Page';
+export default function Profile({ navigation }) {
   return (
+
   	<View>
 	  	<View style={styles.top}>
 	  	<View style={{flex:1, flexDirection: 'row', top:50, justifyContent: 'space-between'}}>
+	  	<Button
+        title="Go to Live Cam"
+        onPress={() => navigation.push('Home')}
+      />
+      <Button title="Go back" onPress={() => navigation.goBack()} />
+      
 	  	<View style={styles.topview}><Text style={[styles.toptext,styles.left]}>Settings</Text></View><View style={[styles.topview, styles.midtopview]}><Text style={[styles.toptext, styles.midtop]}>Profile</Text></View><View style={styles.topview}><Text style={[styles.toptext, styles.right]}>Logout</Text></View>
 	  	</View>
 	  	</View>
+	  	<View
+    />
 	  	<View style={{alignItems:'center', top: 128}}>
 		    <View>
 		      <Image style={styles.circle} source={require('./baby.jpg')}></Image>

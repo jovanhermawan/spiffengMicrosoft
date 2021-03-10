@@ -1,15 +1,20 @@
-import React from 'react';
-import { Image, StyleSheet, Text, View, TouchableHighlight, Dimensions } from 'react-native';
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { Button, Image, StyleSheet, Text, View, TouchableHighlight, Dimensions } from 'react-native';
 
-export default function Page() {
+export default function Page({ navigation }) {
   return (
-  	<View style={{backgroundColor:'#F9F9FB', flex:1}}>
-	    <View style={{top: 125, alignItems:'center', justifyContent: 'center'}}>
+    <View style={{backgroundColor:'#F9F9FB', flex:1}}>
+    <Button
+        title="My Profile"
+        onPress={() => navigation.navigate('Details')}/>
+      <View style={{top: 125, alignItems:'center', justifyContent: 'center'}}>
         <Text style={{fontSize:22, fontWeight: 'bold'}}>
           Live Cam
         </Text>
       </View>
-	    <View style={{top: 150, alignItems:'center', justifyContent: 'center'}}>
+      <View style={{top: 150, alignItems:'center', justifyContent: 'center'}}>
         <View style={{backgroundColor: '#979797',  borderRadius:8, width:343, height:196, alignItems:'center', justifyContent:'center'}}>
         </View>
       </View>
