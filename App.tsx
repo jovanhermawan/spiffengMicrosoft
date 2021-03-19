@@ -10,13 +10,32 @@ export default function Profile({ navigation }) {
   	<View>
 	  	<View style={styles.top}>
 	  	<View style={{flex:1, flexDirection: 'row', top:50, justifyContent: 'space-between'}}>
-	  	<Button
-        title="Go to Live Cam"
+      <View style={{height:200}}>
+	  	<Button success transparent
+        title="Live Cam"
+        color="#5DB075"
         onPress={() => navigation.push('Home')}
-      />
-      <Button title="Go back" onPress={() => navigation.goBack()} />
+      /></View>
+      <View style={{height:200}}>
+      <Button success transparent
+        title="Expenses Progress"
+        color="#5DB075"
+        onPress={() => navigation.push('Expenses')}
+      /></View>
+ 
       
-	  	<View style={styles.topview}><Text style={[styles.toptext,styles.left]}>Settings</Text></View><View style={[styles.topview, styles.midtopview]}><Text style={[styles.toptext, styles.midtop]}>Profile</Text></View><View style={styles.topview}><Text style={[styles.toptext, styles.right]}>Logout</Text></View>
+      
+	  	<View style={[styles.topview, styles.midtopview]}><Text style={[styles.toptext, styles.midtop]}>Profile</Text></View><View style={{height:200}}>
+      <Button success transparent
+        title="Nutritional Intake"
+        color="#5DB075"
+        onPress={() => navigation.push('Nutrition')}
+      /></View><View style={{height:200}}>
+      <Button success transparent
+        title="Analytics"
+        color="#5DB075"
+        onPress={() => navigation.push('Analytics')}
+      /></View>
 	  	</View>
 	  	</View>
 	  	<View

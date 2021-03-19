@@ -6,9 +6,7 @@ import { Button, Image, StyleSheet, Text, View, TouchableHighlight, Dimensions }
 export default function Page({ navigation }) {
   return (
     <View style={{backgroundColor:'#F9F9FB', flex:1}}>
-    <Button
-        title="My Profile"
-        onPress={() => navigation.navigate('Details')}/>
+    
       <View style={{top: 125, alignItems:'center', justifyContent: 'center'}}>
         <Text style={{fontSize:22, fontWeight: 'bold'}}>
           Live Cam

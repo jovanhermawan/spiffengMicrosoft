@@ -100,7 +100,7 @@ const MyPieChart = () => {
 };
 
 
-const App = () => {
+const Nutrition = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
       <ScrollView>
@@ -183,7 +183,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default Nutrition;
 
 const styles = StyleSheet.create({
   container: {

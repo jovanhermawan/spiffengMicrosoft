@@ -61,7 +61,7 @@ const MyBarChart = () => {
 
 
 
-const App = () => {
+const Analytics = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
       <ScrollView>
@@ -145,7 +145,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default Analytics;
 
 const styles = StyleSheet.create({
   container: {

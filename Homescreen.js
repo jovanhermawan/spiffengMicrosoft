@@ -6,6 +6,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Image, StyleSheet, TouchableHighlight, Dimensions } from 'react-native';
 import Page from'./Page';
 import Profile from './App';
+import Analytics from './analytics-bar';
+import Expenses from './expenses_progress-bar';
+import Nutrition from './nutritional-intake';
 
 
 function HomeScreen({ navigation }) {
@@ -40,9 +43,12 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Details">
         <Stack.Screen name="Home" component={Page} />
         <Stack.Screen name="Details" component={Profile} />
+        <Stack.Screen name="Expenses" component={Expenses} />
+        <Stack.Screen name="Nutrition" component={Nutrition} />
+        <Stack.Screen name="Analytics" component={Analytics} />
       </Stack.Navigator>
     </NavigationContainer>
   );

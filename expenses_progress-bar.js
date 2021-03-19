@@ -53,7 +53,7 @@ const MyProgressChart = () => {
 
 
 
-const App = () => {
+const Expenses = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
       <ScrollView>
@@ -137,7 +137,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default Expenses;
 
 const styles = StyleSheet.create({
   container: {
