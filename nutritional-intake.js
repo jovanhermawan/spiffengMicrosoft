@@ -31,43 +31,43 @@ const MyPieChart = () => {
       <PieChart
         data={[
           {
-            name: 'Carrot',
+            name: 'Vitamin A',
             population: 0.7,
             color: 'rgba(131, 142, 234, 1)',
             legendFontColor: '#7F7F7F',
             legendFontSize: 15,
           },
           {
-            name: 'Duckweed',
+            name: 'Vitamin B',
             population: 0.5,
             color: 'rgba(131, 90, 234, 1)',
             legendFontColor: '#7F7F7F',
             legendFontSize: 15,
           },
           {
-            name: 'Duckweed',
+            name: 'Vitamin C',
             population: 0.4,
             color: 'rgba(131, 167, 234, 1)',
             legendFontColor: '#7F7F7F',
             legendFontSize: 15,
           },
           {
-            name: 'Potato',
+            name: 'Potassium',
             population: 0.3,
             color: '#F00',
             legendFontColor: '#7F7F7F',
             legendFontSize: 15,
           },
           {
-            name: 'Cocoa',
+            name: 'Protein',
             population: 0.8,
             color: '#ffffff',
-            color: 'rgb(0, 0)',
+            color: 'rgb(0, 0, 0)',
             legendFontColor: '#7F7F7F',
             legendFontSize: 15,
           },
           {
-            name: 'Strawberry',
+            name: 'Iron',
             population: 0.4,
             color: 'rgb(0, 0, 255)',
             legendFontColor: '#7F7F7F',
@@ -112,68 +112,82 @@ const Nutrition = () => {
         </View>
 
         <View style={{left:20}}>
+        <Text>
+          </Text>
           <Text style={{fontWeight:'bold'}}>
-            Carrot
+            Vitamin A
           </Text>
         </View>
-        <View style={{left:150}}>
+        <View style={{left:20}}>
           <Text>
-            70% Recommended Intake 
+            70% (630 mcg) reached out of 900 mcg daily goal
+
+          </Text>
+          <Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Duckweed
+            Vitamin B
           </Text>
         </View>
-        <View style={{left:150}}>
+        <View style={{left:20}}>
           <Text>
-            50% Recommended Intake 
+            50% (200 mcg) reached out of 400 mcg daily goal 
+
+          </Text><Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Corn
+            Vitamin C
           </Text>
         </View>
-        <View style={{left:150}}>
+        <View style={{left:20}}>
           <Text>
-            40% Recommended Intake 
+            40% (36 mg) reached out of 90 mg daily goal 
+          </Text><Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Potato
+            Potassium
           </Text>
         </View>
-        <View style={{left:150}}>
+        <View style={{left:20}}>
           <Text>
-            30% Recommended Intake 
+            You reached the daily goal of 3400 mg
+
+          </Text><Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Cocoa
+            Protein
           </Text>
         </View>
-        <View style={{left:150}}>
+        <View style={{left:20}}>
           <Text>
-            80% Recommended Intake 
+            50% (28 g) reached out of 56 g daily goal 
+
+          </Text><Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Strawberry
+            Iron
           </Text>
         </View>
-        <View style={{left:150}}>
+        <View style={{left:20}}>
           <Text>
-            40% Recommended Intake 
+            You reached the daily goal of 8.7 mg
+
+          </Text><Text>
           </Text>
         </View>
 

@@ -7,16 +7,16 @@ export default function Page({ navigation }) {
   return (
     <View style={{backgroundColor:'#F9F9FB', flex:1}}>
     
-      <View style={{top: 125, alignItems:'center', justifyContent: 'center'}}>
+      <View style={{top: 80, alignItems:'center', justifyContent: 'center'}}>
         <Text style={{fontSize:22, fontWeight: 'bold'}}>
           Live Cam
         </Text>
       </View>
-      <View style={{top: 150, alignItems:'center', justifyContent: 'center'}}>
+      <View style={{top: 100, alignItems:'center', justifyContent: 'center'}}>
         <View style={{backgroundColor: '#979797',  borderRadius:8, width:343, height:196, alignItems:'center', justifyContent:'center'}}>
         </View>
       </View>
-      <View style={{top: 150, alignItems:'center'}}>
+      <View style={{top: 100, alignItems:'center'}}>
         <View style={{backgroundColor: '#FFFFFF',  borderRadius:8, width:343, height:112, alignItems:'center', display:'flex', flexDirection:'column', justifyContent:'space-around'}}>
           <View style={{flex: 1,flexDirection:'row', alignItems:'center'}}>
             <View style={{width:110, height:16}}><Text style={{color:'#1C1939'}}>Temp</Text></View><View style={{width:100, height:16}}><Text style={{color:'#1C1939'}}>Humidity</Text></View><View style={{width:100, height:16}}><Text style={{color:'#1C1939'}}>Soil Moisture</Text></View>
@@ -26,16 +26,16 @@ export default function Page({ navigation }) {
           </View>
         </View>
       </View>
-      <View style={{top:175, left:40}}>
+      <View style={{top:140, left:40}}>
         <Text style={{fontSize:18, fontWeight:'bold', color:'#1C1939'}}>
           Updates
         </Text>
       </View>
-      <View style={{top:200, left:40, flex:1, flexDirection:'row', justifyContent:'flex-start'}}>
+      <View style={{left:40, bottom:40, flex:1, flexDirection:'row', justifyContent:'flex-start'}}>
         <View>
-          <Image style={{width:41, height:46, borderRadius:16}} source={require('./water.png')}></Image>
+          <Image style={{top:200,width:41, height:46, borderRadius:16}} source={require('./water.png')}></Image>
         </View>
-        <View style={{left:20}}>
+        <View style={{top:200,left:20}}>
           <Text style={{fontWeight:'bold'}}>
             Plant Watered
           </Text>
@@ -44,7 +44,7 @@ export default function Page({ navigation }) {
           </Text>
         </View>
       </View>
-      <View style={{top:125, left:40, flex:1, flexDirection:'row', justifyContent:'flex-start'}}>
+      <View style={{top:100, left:40, flex:1, flexDirection:'row', justifyContent:'flex-start'}}>
         <View>
           <Image style={{width:41, height:46, borderRadius:16}} source={require('./harvest.png')}></Image>
         </View>
@@ -57,7 +57,7 @@ export default function Page({ navigation }) {
           </Text>
         </View>
       </View>
-      <View style={{top:50, left:40, flex:1, flexDirection:'row', justifyContent:'flex-start'}}>
+      <View style={{top:40, left:40, flex:1, flexDirection:'row', justifyContent:'flex-start'}}>
         <View>
           <Image style={{width:41, height:46, borderRadius:16}} source={require('./trade.png')}></Image>
         </View>

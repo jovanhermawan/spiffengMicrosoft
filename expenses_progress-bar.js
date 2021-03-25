@@ -27,7 +27,7 @@ import {
 const MyProgressChart = () => {
   return (
     <>
-      <Text style={styles.header}>Expense Chart</Text>
+      <Text style={styles.header}>Insights</Text>
       <ProgressChart
         data={[0.3]}
         width={Dimensions.get('window').width - 16}

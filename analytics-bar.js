@@ -27,13 +27,13 @@ import {
 const MyBarChart = () => {
   return (
     <>
-      <Text style={styles.header}>My Item</Text>
+      <Text style={styles.header}>Growth Rate</Text>
       <BarChart
         data={{
-          labels: ['Carrot', 'Duckweed', 'Corn', 'Potato', 'Cocoa', 'Strawberry'],
+          labels: ['08/02', '09/02', '10/02', '11/02', '12/02', '13/02'],
           datasets: [
             {
-              data: [20, 45, 28, 80, 99, 43],
+              data: [0.02, 0.03, 0.02, 0.02, 0.03, 0.02],
             },
           ],
         }}
@@ -74,68 +74,76 @@ const Analytics = () => {
         </View>
 
         <View style={{left:20}}>
+        <Text>
+          </Text>
           <Text style={{fontWeight:'bold'}}>
-            Carrot
+            13/02/21
           </Text>
         </View>
-        <View style={{left:250}}>
+        <View style={{left:20}}>
           <Text>
-            20 qty
+            Average Growth of 0.02 cm
+          </Text><Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Duckweed
+            12/02/21
           </Text>
         </View>
-        <View style={{left:250}}>
+        <View style={{left:20}}>
           <Text>
-            45 qty
+            Average Growth of 0.03 cm
+          </Text><Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Corn
+            11/02/21
           </Text>
         </View>
-        <View style={{left:250}}>
+        <View style={{left:20}}>
           <Text>
-            28 qty
+            Average Growth of 0.02 cm
+          </Text><Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Potato
+            10/02/21
           </Text>
         </View>
-        <View style={{left:250}}>
+        <View style={{left:20}}>
           <Text>
-            80 qty
+            Average Growth of 0.02 cm
+          </Text><Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Cocoa
+            09/02/21
           </Text>
         </View>
-        <View style={{left:250}}>
+        <View style={{left:20}}>
           <Text>
-            99 qty
+            Average Growth of 0.03 cm
+          </Text><Text>
           </Text>
         </View>
 
         <View style={{left:20}}>
           <Text style={{fontWeight:'bold'}}>
-            Strawberry
+            08/02/21
           </Text>
         </View>
-        <View style={{left:250}}>
+        <View style={{left:20}}>
           <Text>
-            43 qty
+            Average Growth of 0.02 cm
+          </Text><Text>
           </Text>
         </View>
 

@@ -3,10 +3,11 @@
   "displayName": "testing",
   "expo": {
     "name": "testing",
-    "slug": "testing",
+    "slug": "spiffeng",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": ""
   }
 }

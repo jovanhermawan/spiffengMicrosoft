@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Button, Image, StyleSheet, Text, View, TouchableHighlight, Dimensions } from 'react-native';
+import { Button, Image, StyleSheet, Text, View, TouchableHighlight, Dimensions, ScrollView } from 'react-native';
 import Page from'./Page';
 export default function Profile({ navigation }) {
   return (
@@ -18,29 +18,30 @@ export default function Profile({ navigation }) {
       /></View>
       <View style={{height:200}}>
       <Button success transparent
-        title="Expenses Progress"
+        title="Message"
         color="#5DB075"
-        onPress={() => navigation.push('Expenses')}
+        onPress={() => navigation.push('Message')}
       /></View>
  
       
       
-	  	<View style={[styles.topview, styles.midtopview]}><Text style={[styles.toptext, styles.midtop]}>Profile</Text></View><View style={{height:200}}>
+	  	<View style={{height:200}}>
       <Button success transparent
-        title="Nutritional Intake"
+        title="Nutrition"
         color="#5DB075"
         onPress={() => navigation.push('Nutrition')}
       /></View><View style={{height:200}}>
       <Button success transparent
-        title="Analytics"
+        title="Growth"
         color="#5DB075"
-        onPress={() => navigation.push('Analytics')}
+        onPress={() => navigation.push('Growth Rate')}
       /></View>
 	  	</View>
 	  	</View>
 	  	<View
     />
 	  	<View style={{alignItems:'center', top: 128}}>
+      <View style={[styles.topview, styles.midtopview]}><Text style={[styles.toptext, styles.midtop]}>Profile</Text></View>
 		    <View>
 		      <Image style={styles.circle} source={require('./baby.jpg')}></Image>
 		    </View>
